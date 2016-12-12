@@ -8,3 +8,4 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 
 * [Day 1 - Drum Kit](01/)
 * [Day 2 - JS + CSS Clock](02/)
+* [Day 3 - CSS Variables](03/)
