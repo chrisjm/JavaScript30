@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+</head>
+<body>
+
+  <p>
+    Try typing in <pre>magic!</pre> or <pre>clever</pre>
+  </p>
+
+  <script>
+    const pressed = [];
+    const cornCode =   'magic!';
+    const raptorCode = 'clever';
+
+    window.addEventListener('keyup', (e) => {
+      pressed.push(e.key);
+      pressed.splice(-cornCode.length - 1, pressed.length - cornCode.length);
+
+      if (pressed.join('').includes(cornCode)) {
+        cornify_add();
+      }
+
+      if (pressed.join('').includes(raptorCode)) {
+        raptorize();
+      }
+    });
+  </script>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+  <script type="text/javascript" src="raptorize.js"></script>
+
+</body>
+</html>
