@@ -87,3 +87,9 @@ h2 {
   outline: 0;
   padding: 10px;
 }
+
+.delete {
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: transparent;
+  cursor: pointer;
+}
