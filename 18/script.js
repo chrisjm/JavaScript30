@@ -25,6 +25,6 @@ const mins = Math.floor(secondsLeft / 60);
 secondsLeft = seconds % 60;
 
 // Output
-console.log(hours, mins, secondsLeft);
+console.log(`${hours} hours ${mins} minutes ${secondsLeft} seconds`);
 
 // TODO: Use only one reduce function
